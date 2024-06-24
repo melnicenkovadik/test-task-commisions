@@ -1,0 +1,33 @@
+{
+  "name": "test-commissions",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha ./src/test",
+    "build": "npx babel src --out-dir dist",
+    "launch": "npm run build && node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lopatovas/Commissions.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Javascript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/preset-env": "^7.24.7",
+    "chai": "^4.2.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.0"
+  },
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}
